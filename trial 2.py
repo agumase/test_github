@@ -10,11 +10,10 @@ print("Hello, World!\nWhat should I do?")#\n, or newline in printing makes the s
 #int
 a=10
 type(a)
-#float
-a=10.5
+a=10.5#float
 type(a)
 #str
-a="agumase"
+a="agumase"#str
 type(a)
 #bool
 a=True
