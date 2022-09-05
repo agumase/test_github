@@ -128,6 +128,27 @@ while a < 10:  # While the value of the variable a is less than 10 do the follow
     #     a = a + 1 |<--[ The while statement BLOCK ]
     #     print (a) |
     #              --
+# another example
+a = 1
+s = 0
+print('Enter Numbers to add to the sum.')
+print('Enter 0 to quit.')
+while a != 0:
+    print('Current Sum:', s)
+    a = float(input('Number? '))
+    s = s + a
+print('Total Sum =', s)
+#######
+
+## Infinite loops or Never Ending Loop
+#Now that we have while loops, it is possible to have programs that run forever.
+#An easy way to do this is to write a program like this: until the heat death of the universe or you stop it, because 1 will forever be equal to 1.
+# The way to stop it is to hit the Control (or Ctrl) button and C (the letter) at the same time. This will kill the program.
+# (Note: sometimes you will have to hit enter after the Control-C.)
+# On some systems, nothing will stop it, short of killing the process--so avoid!
+
+while 1 == 1:
+   print("Help, I'm stuck in a loop.")
 #conditional statment im python
 x=1
 
@@ -141,8 +162,23 @@ while(i<=200):
     print(i)
 i+=20:
 
-
-
 s1={1,2,3,4}
 s2={4,5,6}
 print(s1&s2)
+############
+Fibonacci-method1.py
+
+# This program calculates the Fibonacci sequence
+a = 0
+b = 1
+count = 0
+max_count = 20
+
+while count < max_count:
+    count = count + 1
+    print(a, end=" ")  # Notice the magic end=" " in the print function arguments
+                       # that keeps it from creating a new line.
+    old_a = a    # we need to keep track of a since we change it.
+    a = b
+    b = old_a + b
+print()  # gets a new (empty) line. the output is 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
