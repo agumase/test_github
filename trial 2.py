@@ -173,7 +173,7 @@ a = 0
 b = 1
 count = 0
 max_count = 20
-
+ ss
 while count < max_count:
     count = count + 1
     print(a, end=" ")  # Notice the magic end=" " in the print function arguments
